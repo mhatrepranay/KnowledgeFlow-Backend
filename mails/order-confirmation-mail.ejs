@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Confirmation</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .message {
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      h1 {
+        color: #4caf50;
+        margin: 0;
+      }
+
+      p {
+        color: #333333;
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
+
+      .course-info {
+        margin-top: 20px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+      }
+
+      th,
+      td {
+        border: 1px solid #dddddd;
+        padding: 12px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+
+      .footer {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 14px;
+        color: #888888;
+      }
+
+      .button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      .button:hover {
+        background-color: #388e3c;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="message">
+        <h1>Your KnowledgeFlow Order is Complete!</h1>
+        <p>
+          We are thrilled to inform you that your order has been successfully
+          placed.
+        </p>
+      </div>
+      <div class="course-info">
+        <h2>Order Details:</h2>
+        <table>
+          <tr>
+            <td>Order #:</td>
+            <td><%= order._id %></td>
+          </tr>
+          <tr>
+            <td>Order Date:</td>
+            <td><%= order.date %></td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <th>Item</th>
+            <th>Qty</th>
+            <th>Cost</th>
+          </tr>
+          <tr>
+            <td><%= order.name %></td>
+            <td>1</td>
+            <td>$<%= order.price %></td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td>Subtotal:</td>
+            <td>$<%= order.price %></td>
+          </tr>
+          <tr>
+            <td>Total:</td>
+            <td>$<%= order.price %></td>
+          </tr>
+        </table>
+      </div>
+      <div class="footer">
+        <p>
+          If you have any questions, please contact our support team at
+          <a
+            href="mailto:support@example.com"
+            style="color: #4caf50; text-decoration: none"
+            >mhatrepranay1234@gmail.com</a
+          >
+        </p>
+        <p>&copy; 2024 E-learning. All rights reserved.</p>
+      </div>
+    </div>
+  </body>
+</html>
