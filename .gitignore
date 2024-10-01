@@ -5,6 +5,14 @@
 resume.routes.ts
 resume.controller.ts
 # dependencies
+/public
+MERN.mp4
+MERN1.mp4
+MERN2.mp4
+MERN3.mp4
+MERN4.mp4
+MERN5.mp4
+MERN6.mp4
 /node_modules
 /.pnp
 .pnp.js
